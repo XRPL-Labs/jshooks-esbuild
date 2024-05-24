@@ -1,0 +1,6 @@
+.DS_Store
+/build/*.wasm
+/sample/index.js
+/browser/package-lock.json
+/browser/esbuild-bundle.js
+/browser/node_modules

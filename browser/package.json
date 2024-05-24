@@ -1,0 +1,14 @@
+{
+  "name": "esbuild-wasm-browser-sample",
+  "version": "1.0.0",
+  "description": "Sample running esbuild in the browser through WASI wasm",
+  "author": "Wietse Wind <w@xrpl-labs.com>",
+  "license": "MIT",
+  "scripts": {
+    "demo": "serve .."
+  },
+  "dependencies": {
+    "@runno/wasi": "^0.7.0",
+    "serve": "^14.2.3"
+  }
+}
