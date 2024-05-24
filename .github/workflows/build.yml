@@ -12,7 +12,7 @@ concurrency:
 
 jobs:
   esbuildwasmbuild:
-    runs-on: golang
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
@@ -25,7 +25,7 @@ jobs:
         run: docker build --tag esbuild-wasi
 
       - name: Run Docker Container to build esbuild
-        run: mkdir -p ${{ github.workspace }}/build && touch ${{ github.workspace }}/build/esbuild.wasm && docker run --rm --platform linux/amd64 -v ${{ github.workspace }}/build:/build esbuild-wasi
+        run: touch ${{ github.workspace }}/build/esbuild.wasm && docker run --rm -v ${{ github.workspace }}/build:/build esbuild-wasi
 
       - name: Upload artifact compiler, esbuild.wasm
         uses: actions/upload-artifact@v4
