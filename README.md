@@ -91,8 +91,10 @@ npm run demo
 
 ### Test @ `https://runno.dev/wasi`
 
-Upload `qjsc.wasm` and create a `.js` file @ the virtual filesystem, e.g. `sample.js`, and then use argument:
+Upload `esbuild.wasm` and upload `index.ts` from the `sample` folder in this repo to the virtual filestystem, and then use argument:
 
 ```bash
--c -o sample.bc sample.js
+index.ts --minify --format=esm --platform=browser --outfile=out.js
 ```
+
+Then download `out.js` from the virtual filesystem and... Tada 🎉!
