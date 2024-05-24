@@ -43,7 +43,7 @@ jobs:
         with:
           prerelease: false
           draft: false
-          make_latst: true
+          make_latest: true
           name: autorelease
           tag_name: autorelease
           files: esbuild.wasm
