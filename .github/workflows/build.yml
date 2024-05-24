@@ -22,7 +22,7 @@ jobs:
         uses: docker/setup-buildx-action@v3
 
       - name: Build Docker container
-        run: docker build --tag esbuild-wasi
+        run: docker build --tag esbuild-wasi .
 
       - name: Run Docker Container to build esbuild
         run: touch ${{ github.workspace }}/build/esbuild.wasm && docker run --rm -v ${{ github.workspace }}/build:/build esbuild-wasi
