@@ -27,6 +27,9 @@ jobs:
       - name: Run Docker Container to build esbuild
         run: touch ${{ github.workspace }}/build/esbuild.wasm && docker run --rm -v ${{ github.workspace }}/build:/build esbuild-wasi
 
+      - name: Run compiled .wasm (trigger if no working .wasm binary present)
+        run: docker run --rm -v ${{ github.workspace }}/build:/build esbuild-wasi wasmtime /build/esbuild.wasm --help
+
       - name: Upload artifact compiler, esbuild.wasm
         uses: actions/upload-artifact@v4
         with:
