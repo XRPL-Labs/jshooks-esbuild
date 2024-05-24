@@ -7,6 +7,7 @@
 ##### This project depends on:
 
 - [evanw/esbuild](https://github.com/evanw/esbuild)
+  - Go to WASI compilation, PR: https://github.com/evanw/esbuild/pull/3779
 
 # Build
 
