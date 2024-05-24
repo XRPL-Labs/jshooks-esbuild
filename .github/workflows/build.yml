@@ -1,4 +1,4 @@
-name: Build qjsc.wasm Builder image and WASM Binary using Docker
+name: Build esbuild.wasm bundler WASM (WASI) Binary using Docker
 
 on:
   push:
