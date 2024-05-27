@@ -2,6 +2,11 @@
 
 [![Build qjsc.wasm Builder image and WASM Binary using Docker](https://github.com/XRPL-Labs/jshooks-esbuild/actions/workflows/build.yml/badge.svg)](https://github.com/XRPL-Labs/jshooks-esbuild/actions/workflows/build.yml)
 
+### Live loading
+
+The latest version of the `esbuild.wasm` build is available (CORS enabled) at:
+- https://wasm.xahau.tech/esbuild.wasm
+
 ### ESBuild JS/TS bundler for On chain Rule Engine (Smart Contracts)
 
 ##### This project depends on:
